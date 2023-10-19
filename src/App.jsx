@@ -1,15 +1,14 @@
-import Header from "./Components/Header"
-import Products from "./Components/Products"
-import Cart from "./Components/Cart"
+import Home from './Components/pages/Home'
+import Basket from './Components/pages/Basket'
+import { Route, Routes } from "react-router-dom"
 function App() {
   return (
-    <div>
-      <Header/>
-      <div className="container mx-auto px-8">
-      <Products/>
-      <Cart/>
-    </div>
-    </div>
+      <>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path='basket' element={<Basket/>}/>
+        </Routes>
+      </>
     
   )
 }
