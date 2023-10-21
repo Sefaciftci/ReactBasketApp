@@ -3,13 +3,17 @@ import { useState } from "react";
 
 const MainContext = createContext();
 
-
 function Provider({children}){
     const [basket , setBasket] = useState([]);
+    const clearCart = () => {
+        setBasket([]);
+    }
     const data = {
         basket,
-        setBasket
+        setBasket,
+        clearCart
     }
+
     return <MainContext.Provider value={data}>
         {children}
     </MainContext.Provider>

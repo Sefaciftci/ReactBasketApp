@@ -9,7 +9,7 @@ const ProductItem = ({product}) => {
 
   return (
     <div className='shadow rounded-lg border-2'>
-        <img className='w-full h-56 object-cover rounded-t' src='https://picsum.photos/200'/>
+        <img className='w-full h-56 object-cover rounded-t' src={product.img}/>
         <div className='mt-4 p-3 '>
           <div className='flex justify-between font-semibold text-xl'>
             <h3 className=''>{product.name}</h3>
