@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header'
 import Products from '../Products'
 
-const Home = () => {
+const Home = ({basket , setBasket}) => {
   return (
     <div>
         <Header/>
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

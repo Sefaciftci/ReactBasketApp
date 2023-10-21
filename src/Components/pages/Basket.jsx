@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Cart from '../Cart'
+
 const Basket = () => {
   return (
     <div>
-        <Cart/>
+        {basket.length > 0 ? <Cart/> : 
+        <h3>Sepetiniz Boş</h3>}
     </div>
   )
 }
 
-export default Basket
+export default Basket;
