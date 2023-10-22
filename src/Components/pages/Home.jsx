@@ -6,7 +6,7 @@ const Home = ({basket , setBasket}) => {
   return (
     <div>
         <Header/>
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-8 pb-12">
         <Products/>   
       </div>
     </div>

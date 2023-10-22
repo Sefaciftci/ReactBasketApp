@@ -14,14 +14,14 @@ const Cart = () => {
       <hr/>
       <ul className='py-5 '>
         {basket.map((item,i) => {
-          return <li className='py-1 flex justify-between' key={i}>
+          return <li className='py-[6px] flex justify-between font-semibold text-gray-500' key={i}>
             <span>{item.name}</span>
-            <span>{item.price} TL</span>
+            <span className='text-gray-600'>{item.price} TL</span>
           </li>
         })}
       </ul>
         <div className='mt-2'>
-          <h4 className='text-gray-600 font-bold text-xl'>Total: {totalPrice}</h4>
+          <h4 className='text-gray-600 font-bold text-xl'>Total: {totalPrice} TL</h4> 
           <button onClick={clearCart} className='mb-2 w-full bg-red-500 hover:bg-red-600 text-white rounded-md mt-2 py-1 transition-all'>Sepeti Temizle</button>
         </div>
     </div> 
