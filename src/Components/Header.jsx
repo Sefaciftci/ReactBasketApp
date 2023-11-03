@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className='flex items-center justify-between py-8 px-10 text-2xl mb-16 text-white bg-black '>
       <div className='font-bold'>
-        <h3>React-Tailwind Shop Application</h3>
+        <h3>React-Tailwind Shop App</h3>
       </div> 
       <div className='flex items-center'>
         <button className='mr-4 font-bold text-2xl' onClick={()=> navigate('/')}>Shop</button>
